@@ -35,7 +35,7 @@ if __name__ == '__main__':
             if file.endswith('.doc'):
                 doc2txt(os.path.join(root, file), outdir)
             elif file.endswith('.docx'):
-                with open(os.path.join(outdir, file.replace('.docx', '.txt')), 'w') as f:
+                with open(os.path.join(outdir, file.replace('.docx', '.txt')), 'w', encoding='utf-8') as f:
                     f.write(
                         docx2txt.process(os.path.join(root, file))
                     )
