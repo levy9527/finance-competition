@@ -1,2 +1,4 @@
 python-dotenv==1.0.1
 docx2txt
+instructor
+openai

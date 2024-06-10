@@ -3,6 +3,7 @@ import os
 import subprocess
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# 预处理文件
 def doc2txt(file_path, outdir):
     '''
     convert doc[x] to txt

@@ -6,7 +6,7 @@ def load_txt(dir):
         for file in files:
             try:
                 with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
-                    yield f.read()
+                    yield file.split('.')[0], f.read()
             except Exception as e:
                 print(f"读取文件 {file} 时发生错误: {e}")
 
